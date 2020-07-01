@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Collectable
+  - Enemy
+  - GameControl
+  - Ground
+  - SeanBinchester
+  - Ghost
+  - Panel1
+  - Panel2
+  - Panel3
+  - Panel4
+  - Panel5
+  - Panel6
+  - Panel7
+  - Panel8
+  - Panel9
+  - potion
+  - lifePot
+  - checkPoint
+  - cage
+  - collectAudio
+  - ghostAudio
+  - bullet
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Ground
+  - Collectable
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
