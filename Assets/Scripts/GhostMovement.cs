@@ -16,7 +16,7 @@ public class GhostMovement : MonoBehaviour
 
     public GameObject checkPoint;
 
-    private GameControl gc;
+    private GameCtrl gc;
 
     [SerializeField]
     private float speed;
@@ -27,14 +27,13 @@ public class GhostMovement : MonoBehaviour
     [SerializeField]
     private Transform transformB;
 
-    // Use this for initialization
     void Start()
     {
         posA = childTransform.localPosition;
         posB = transformB.localPosition;
         nexPos = posB;
 
-        gc = GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameControl>();
+        gc = GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameCtrl>();
     }
 
     void Update()

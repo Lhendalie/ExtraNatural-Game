@@ -9,7 +9,7 @@ public class EnemyCtrl : MonoBehaviour {
     public Animator anim;
     public PlatformMovement pm;
     public PlayerCtrl pc;
-    public GameControl gc;
+    public GameCtrl gc;
     public GameObject panel7;
 
     private static System.Random rnd = new System.Random();
@@ -18,7 +18,7 @@ public class EnemyCtrl : MonoBehaviour {
         anim = gameObject.GetComponent<Animator>();
         pm = gameObject.GetComponent<PlatformMovement>();
         pc = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerCtrl>();
-        gc = GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameControl>();
+        gc = GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameCtrl>();
 
     }
 
@@ -37,7 +37,7 @@ public class EnemyCtrl : MonoBehaviour {
         }
     }
 
-    //If the goes is dead, plays ghostdead animation and has 20% chance to drop a key
+    //If the ghost is dead, plays ghostdead animation and has 20% chance to drop a key
     void GhostDie()
     {
         anim.SetBool("IsDead", true);

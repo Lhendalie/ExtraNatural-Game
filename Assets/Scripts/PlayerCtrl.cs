@@ -31,7 +31,7 @@ public class PlayerCtrl : MonoBehaviour {
     public GameObject panel5;
     public GameObject panel6;
 
-    private GameControl gc;
+    private GameCtrl gc;
     private EnemyCtrl ec;
     private GhostMovement gm;
 
@@ -47,7 +47,7 @@ public class PlayerCtrl : MonoBehaviour {
         extraJumps = extraJumpsValue;
         rb = GetComponent<Rigidbody2D>();
 
-        gc = GameObject.FindGameObjectWithTag("GameControl").GetComponent<GameControl>();
+        gc = GameObject.Find("GameControl").GetComponent<GameCtrl>();
         winAudio = GetComponent<AudioSource>();
     }
 

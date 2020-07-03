@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BulletCtrl : MonoBehaviour
 {
@@ -30,7 +28,6 @@ public class BulletCtrl : MonoBehaviour
         {
             transform.Translate(Vector2.left * speed * Time.deltaTime);
         }
-
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -52,11 +49,7 @@ public class BulletCtrl : MonoBehaviour
             }
         }
 
-        if (col.CompareTag("Player"))
-        {
-
-        }
-        else
+        if (!col.CompareTag("Player"))
         {
             Destroy(gameObject);
         }
